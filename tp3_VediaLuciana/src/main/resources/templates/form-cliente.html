@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Cliente</title>
+    <link rel="stylesheet" href="/css/estilos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header id="main-header">
+        <h1>Registro de Cliente</h1>
+    </header>
+
+    <!-- Formulario de Registro de Cliente -->
+    <main class="main-content">
+        <form action="/submit-client" method="post">
+            <label for="dni">DNI:</label>
+            <input type="number" id="dni" name="dni" required><br><br>
+
+            <label for="nombres">Nombres:</label>
+            <input type="text" id="nombres" name="nombres" required><br><br>
+
+            <label for="apellidos">Apellidos:</label>
+            <input type="text" id="apellidos" name="apellidos" required><br><br>
+
+            <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required><br><br>
+
+            <label>Género:</label><br>
+            <input type="radio" id="femenino" name="genero" value="femenino" required>
+            <label for="femenino">Femenino</label><br>
+            <input type="radio" id="masculino" name="genero" value="masculino" required>
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="x" name="genero" value="x" required>
+            <label for="x">X</label><br><br>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required><br><br>
+
+            <label for="domicilio">Domicilio:</label>
+            <input type="text" id="domicilio" name="domicilio" required><br><br>
+
+			<label for="provincia">Provincia:</label>
+				<select id="provincia" name="provincia" required>
+				    <option value="">Seleccione su provincia</option>
+				    <option value="buenos_aires">Buenos Aires</option>
+				    <option value="cordoba">Córdoba</option>
+				    <option value="santa_fe">Santa Fe</option>
+					<option value="jujuy">Jujuy</option>
+            	</select><br><br>
+
+            <label for="telefono">Número de Teléfono Celular:</label>
+            <input type="text" id="telefono" name="telefono"><br><br>
+
+            <label>Categorías de Interés:</label><br>
+            <input type="checkbox" id="categoria1" name="categorias" value="categoria1">
+            <label for="categoria1">Programacion</label><br>
+            <input type="checkbox" id="categoria2" name="categorias" value="categoria2">
+            <label for="categoria2">Marketing</label><br>
+            <input type="checkbox" id="categoria3" name="categorias" value="categoria3">
+            <label for="categoria3">Legales</label><br>
+			<input type="checkbox" id="categoria4" name="categorias" value="categoria4">
+			<label for="categoria4">Ninguno</label><br><br>
+
+            <label for="sugerencias">Sugerencias para la Empresa:</label><br>
+            <textarea id="sugerencias" name="sugerencias" rows="4" cols="50"></textarea><br><br>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required><br><br>
+
+            <input type="checkbox" id="acepto-terminos" name="acepto-terminos" required>
+            <label for="acepto-terminos">Acepto los términos y condiciones</label><br><br>
+
+            <input type="checkbox" id="acepto-info" name="acepto-info">
+            <label for="acepto-info">Acepto recibir información relativa a la empresa</label><br><br>
+
+            <input type="submit" value="Registrar">
+            <input type="button" value="Cancelar">
+        </form>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer id="main-footer">
+        <p>Contacto: programacion.visual@example.com</p>
+        <p>
+            Síguenos en:
+            <a href="https://www.facebook.com">Facebook</a>,
+            <a href="https://www.twitter.com">Twitter</a>,
+            <a href="https://www.linkedin.com">LinkedIn</a>
+        </p>
+    </footer>
+</body>
+</html>

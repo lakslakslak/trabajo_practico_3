@@ -2,70 +2,116 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Página de Ejemplo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programación Visual - TP3</title>
+    <link rel="stylesheet" href="/css/estilos.css">
 </head>
 <body>
-
-    <header>
-        <h1>Asistencia :D</h1>
+    <!-- Encabezado -->
+    <header id="main-header">
+        <h1>Programación Visual - Trabajo Práctico 3</h1>
     </header>
 
+    <!-- Menú de navegación -->
     <nav>
-        <ul>
-            <li><a href="#seccion1">seccion 1</a></li>
-            <li><a href="#seccion2">seccion 2</a></li>
-            <li><a href="#seccion3">seccion 3</a></li>
-        </ul>
+        <a href="#seccion1" class="nav-link">Introducción</a>
+        <a href="#seccion2" class="nav-link">Contenido</a>
+        <a href="#seccion3" class="nav-link">Conclusión</a>
+		<a href="/form-cliente" class="enlace-menu">Formulario Cliente</a><!-- enlace al formulario -->
     </nav>
 
-    <main>
-        <section id="seccion1">
-            <h2>Links de las clases</h2>
-            <p>︵‿︵‿︵୨˚̣̣̣͙୧ - - - - - ୨˚̣̣̣͙୧‿︵‿︵‿︵</p>
+    <!-- Contenido Principal -->
+    <main class="main-content">
+        <section id="seccion1" class="section-content">
+            <h2 class="section-title">Introducción</h2>
+            <p>Trabajo Práctico Nº3 - Programación Visual.</p>
+            <p>En este trabajo abordaremos los conceptos vistos en el Aula de Programacion Visual</p>
+        </section>
+
+        <section id="seccion2" class="section-content">
+            <h2 class="section-title">Contenido</h2>
+            <h3 class="section-subtitle">Temas Cubiertos</h3>
+            <p>Los temas que se tratarán en este trabajo son:</p>
             <ul>
-                <li>Elemento 1</li>
-                <li>Elemento 2</li>
-                <li>Elemento 3</li>
+				<li>Lenguaje Java: tipos de datos, estructuras de datos, programación orientada a objetos.</li>
+				<li>Introducción a Spring Boot: arquitectura, creación de proyectos, controladores.</li>
+				<li>Gestión de Dependencias y Versionamiento: Git y Maven.</li>
+				<li>Spring Boot MVC: uso de Thymeleaf y Bootstrap.</li>
+				<li>Clases de negocio: inyección de dependencias, servicios.</li>
+				<li>Persistencia de Objetos: JPA, conexiones a bases de datos.</li>
+				<li>Manejo de formularios: gestión de eventos, operaciones CRUD.</li>
             </ul>
-            <table>
-                <tr>
-                    <th>Encabezado 1</th>
-                    <th>Encabezado 2</th>
-                </tr>
-                <tr>
-                    <td>Dato 1</td>
-                    <td>Dato 2</td>
-                </tr>
+
+            <h3 class="section-subtitle">Tabla de Contenidos</h3>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Semana</th>
+                        <th>Temas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Validar que los estudiantes hayan instalado STS y Java
+						Realizar una breve descripción del formato de estructuras iterativas (while y for) : 20 minutos.
+						Taller de GitHub: asistir a un estudiante para que se cree la cuenta en GitHub y cómo subir desde STS un proyecto Java al repositorio remoto de GitHub.
+						Proponer diversos ejercicios sencillos para que los estudiantes realicen y luego lo socialicen en clases, corrigiendo errores o aclarando puntos que generen dudas.
+						Una propuesta puede ser que la asistencia se valide con que al menos dos de estos ejercicios se hayan subido a GitHub, para lo cual deberían compartir en un formulario sus datos y la url del repositorio remoto.</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Profundizar ejemplos de problemas cuya solución requiere la creación de objetos, atributos, métodos; así como la invocación de métodos. 
+						Ejemplificar el uso de las estructuras iterativas de control.
+						Incorporar el uso de la clase Scanner para diversos ejemplos
+						Realizar una introducción al uso de excepciones
+						Brindar un breve ejemplo del uso de String y fechas, y animar a que los estudiantes los profundicen mediante los recursos del aula.
+						Aplicar el concepto de constante y el uso de la palabra reservada static</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Introducir a los estudiantes en el uso de los arreglos.
+						Conceptualizar brevemente el uso de interfaces
+						Introducir a los estudiantes en el uso de algunas colecciones
+						Iniciar en el uso de proyectos Maven
+						Realizar un marco teórico - práctico más profundo sobre versionamiento con Git</td>
+                    </tr>
+					<tr>
+					    <td>4 y 5</td>
+						<td>escribir el uso de los enumerados
+						Introducir las funcionalidades que ofrece Java para la programación funcional
+						Ejemplificar la creación de aplicaciones Spring Boot para proyectos Java desktop
+						Facilitar recursos para realizar pruebas unitarias.</td>
+					</tr>					
+                </tbody>
             </table>
         </section>
 
-        <section id="seccion2">
-            <h2>Sección 2</h2>
-            <h3>Subsección 2.1</h3>
-            <p>Este es otro párrafo de ejemplo.</p>
-        </section>
-
-        <section id="seccion3">
-            <h2>Sección 3</h2>
-            <h3>Subsección 3.1</h3>
-            <p>otro párrafo más xd</p>
+        <section id="seccion3" class="section-content">
+            <h2 class="section-title">Conclusión</h2>
+            <p>La creación de controladores en Spring es otro aspecto clave tratado en el documento. Los controladores permiten manejar las solicitudes HTTP y vincularlas con las vistas correspondientes, lo que es esencial para la interacción usuario-aplicación. La estructura y organización de los controladores influyen directamente en la mantenibilidad y escalabilidad de la aplicación, y el conocimiento adquirido en este apartado es vital para el desarrollo de aplicaciones eficientes y bien estructuradas.</p>
+			<p>Además, la gestión de formularios HTML y el uso de CSS para estilizar la interfaz de usuario son habilidades indispensables para cualquier desarrollador web. Los formularios HTML son la principal herramienta para recopilar información de los usuarios, y su correcta implementación y validación son cruciales para garantizar la integridad y seguridad de los datos. Por otro lado, el uso de CSS no solo mejora la apariencia de la aplicación, sino que también contribuye a una mejor experiencia de usuario, haciendo que la interacción con la aplicación sea más intuitiva y agradable.</p>
         </section>
     </main>
 
+    <!-- Contenido Adicional -->
     <aside>
-        <h2>Contenido Adicional</h2>
-        <a href="#">Enlace Adicional</a>
-        <img src="/src/main/resources/static/imagen/descarga (9).jpg" alt="a">
+        <h2>Recursos Adicionales</h2>
+        <a href="https://spring.academy/guides">Spring Academy</a>
+		<a href="https://www.bidi.la/">Biblioteca Unju</a>
+
+        <img src="/imagen/logopv.png" alt="ikuspegi">
     </aside>
 
-    <footer>
-        <p>Contáctanos: lucyvedia25@email.com</p>
-        <ul>
-            <li><a href="https://www.facebook.com/etsimeupm/?locale=es_ES">Facebook</a></li>
-            <li><a href="https://virtual.unju.edu.ar/">Unju Virtual</a></li>
-            <li><a href="https://github.com/lakslakslak">Repositorio </a></li>
-        </ul>
+    <!-- Pie de Página -->
+    <footer id="main-footer">
+        <p>Contacto: lucyvedia25@gmail.com</p>
+        <p>
+            Síguenos en:
+            <a href="https://www.facebook.com/escminasunju/?locale=es_ES">Facebook</a>,
+            <a href="https://virtual.unju.edu.ar/">Unju Virtual</a>,
+            <a href="https://github.com/lakslakslak?tab=repositories">Github</a>
+        </p>
     </footer>
-
 </body>
 </html>
